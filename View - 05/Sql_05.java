@@ -10,7 +10,7 @@ public class Sql_05 {
     public static void main(String[] args) {
 
         try {
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/newdb", "root", "26199Mrg.");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/newdb", "root", "");
             Statement statement = connection.createStatement();
 
             int executeUpdate = statement.executeUpdate("CREATE VIEW italian_students AS SELECT first_name, last_name FROM newdb.student WHERE country = 'Italy'");
